@@ -155,7 +155,7 @@ public class E2_NotasBien {
 		double total =0 ; 
 		try {
 			for (int i = 0; i<notas.length;i++) {
-				for (int j= 0; j<notas.length;j++) {
+				for (int j= 0; j<notas[i].length;j++) {
 					total += notas[i][j];
 				}
 			System.out.println("Alumno " + (i+1) + ": " + (total/notas[i].length));
