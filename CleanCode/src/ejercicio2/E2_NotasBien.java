@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class E2_NotasBien {
 
 	public static void main(String[] args) {
+		//Try-Catch en las medias aunqeu sin mucha utilidad 
 		Scanner sc = new Scanner(System.in);
 		
 		int opcion; 
 		int numAlum; 
 		int numModulos;
-		double notaLeida; 
 		double[][] tablaNotas = null;
 		Boolean salir = true;
 
@@ -141,12 +141,13 @@ public class E2_NotasBien {
 	}
 	
 	private static void mostrarDatos(double[][] notas) {
-		int j=0;
-		for (int i = 0; i<notas.length; i++) {
-			System.out.println("Alumno " + (i+1)+": "+ notas[i][j]);
-			j++;
-		}
-	
+	    for (int i = 0; i < notas.length; i++) {
+	        System.out.print("Alumno " + (i + 1) + ": ");
+	        for (int j = 0; j < notas[i].length; j++) {
+	            System.out.print(notas[i][j] + " ");
+	        }
+	        System.out.println();
+	    }
 	}
 	
 	
